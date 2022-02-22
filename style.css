@@ -8,7 +8,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.navbar {
+.container-fluid {
 	display: flex;
 	justify-content: center;
 }
