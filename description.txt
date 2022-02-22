@@ -1,0 +1,13 @@
+This project was created as part of the Kisasa recruitement tasks
+
+The site is only frontend thus the create User page is only added for demonstration and doesn't actually add new user.
+The create user page will only test if the email is in the corect format and if the password is strong.
+
+
+The following are the only details that pass the login test
+
+user: batho@kisasa.com
+password: {007Batho}
+
+user: people@kisasa.com
+password: #10Kisasa

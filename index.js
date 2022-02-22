@@ -1,10 +1,10 @@
 let user = [];
 let pass = [];
 
-user.push("banana@mymail.com");
+user.push("batho@mymail.com");
 user.push("people@kisasa.com")
-pass.push("#14Bananas");
-pass.push("#10Kisasa")
+pass.push("{007Batho}");
+pass.push("#10Kisasa");
 
 function createUser(){
     if(!document.getElementById("userc").value.toLowerCase().match(
