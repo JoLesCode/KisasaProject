@@ -2,7 +2,9 @@ let user = [];
 let pass = [];
 
 user.push("banana@mymail.com");
+user.push("people@kisasa.com")
 pass.push("#14Bananas");
+pass.push("#10Kisasa")
 
 function createUser(){
     if(!document.getElementById("userc").value.toLowerCase().match(
@@ -22,15 +24,18 @@ function createUser(){
 function validate(){
 
     for(let i = 0; i<user.length; i++){
-        if(document.getElementById("useri").value == user[i]){
+        if(document.getElementById("useri").value ==  user[i]){
             if(document.getElementById("passi").value == pass[i]){
-                document.location.href = "https://kisasa.co.za/";
+                document.location.href = "https://kisasa.co.za/services/";
                 break;
-            }else if(i == user.length-1){
-                if(document.getElementById("useri").value != user[i] || document.getElementById("passi").value != pass[i]){
-                alert("User Details Can't Be Confirmed");
-                }
+            }else{
+                document.getElementById("passi").style.border = "thin solid red";
+                alert("The entered password is not correct");
             }
+        }else if(i == user.length - 1){
+            document.getElementById("useri").style.border = "thin solid red";
+            document.getElementById("passi").style.border = "1px solid rgba(0,0,0,0.3)";
+            alert("User not found");
         }
     }   
 }
