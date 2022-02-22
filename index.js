@@ -34,6 +34,7 @@ function validate(){
                 break;
             }else{
                 document.getElementById("passi").style.border = "thin solid red";
+                document.getElementById("useri").style.border = "1px solid rgba(0,0,0,0.3)";
                 alert("The entered password is not correct");
             }
         }else if(i == user.length - 1){
